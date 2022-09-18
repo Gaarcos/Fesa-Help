@@ -99,18 +99,20 @@
    
     <div id="resposta"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-      function fazerRequisicao(){
-        console.log('botão funciona111111');
-        var url = '//127.0.0.1:5000/retornaCardapio';
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", url, false);
-        xhttp.send();
-        document.getElementById("resposta").innerHTML = xhttp.responseText;
-        console.log('botão funciona222222');
-      }
-      const el = document.getElementById("botao")
-      el.addEventListener("onclick", fazerRequisicao, true);  
+      
   </script>
+  <script>
+    function fazerRequisicao(){
+    console.log('botão funciona111111');
+    var url = '//127.0.0.1:5000/retornaCardapio';
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", url, false);
+    xhttp.send();
+    document.getElementById("resposta").innerHTML = xhttp.responseText;
+    console.log('botão funciona222222');
+  }
+  const el = document.getElementById("botao")
+  el.addEventListener("onclick", fazerRequisicao, true);  </script>
   </body>
   
 </html>
